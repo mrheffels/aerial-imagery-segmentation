@@ -34,13 +34,13 @@ This is for use with the models/research/deeplab Tensorflow implementation
 4. pip install tf\_slim
 5. From tensorflow/models/research/ directory run: export PYTHONPATH=\$PYTHONPATH:\`pwd\`:\`pwd\`/slim
 ## List of altered files for DroneDeploy dataset experiments
-### DeepLabv3+ Tensorflow research codebase {https://github.com/tensorflow/models/tree/master/research/deeplab} extensions
+### DeepLabv3+ Tensorflow research codebase https://github.com/tensorflow/models/tree/master/research/deeplab extensions
 - convert\_rgb\_to\_index.py (altered to strip 3 dimensional segmentation labels to 1 dimensional)
 - build\_dd\_data.py (altered for DroneDeploy compatiblity)
 - data\_generator.py (altered for DroneDeploy compatiblity)
 - train-dd-full.sh, eval-dd.sh, vis-dd.sh (dataset adaptations inspired by this GitHub repo\footnote[2]{https://github.com/heaversm/deeplab-training})
 
-### DroneDeploy benchmark codebase {https://github.com/dronedeploy/dd-ml-segmentation-benchmark} extensions
+### DroneDeploy benchmark codebase https://github.com/dronedeploy/dd-ml-segmentation-benchmark extensions
 - custom\_training.py (implementation Focal loss function for fastai u-net)
 - custom\_training\_keras.py (implementation Focal loss function for Keras u-net)
 - images2chips.py (added test images conversion to tiles for DeepLabv3+ compatibility)
