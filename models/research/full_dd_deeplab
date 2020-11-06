@@ -1,0 +1,6 @@
+#!/bin/bash
+source /home/TUE/20176671/miniconda3/etc/profile.d/conda.sh
+conda activate tf1_gpu
+sh train-dd-full.sh
+tensorboard --logdir saved
+conda deactivate

@@ -1,0 +1,5 @@
+#!/bin/bash
+source /home/TUE/20176671/miniconda3/etc/profile.d/conda.sh
+conda activate fastai
+python testgpu.py
+conda deactivate

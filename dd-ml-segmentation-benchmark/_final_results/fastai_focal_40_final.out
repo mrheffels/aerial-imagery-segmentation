@@ -1,0 +1,2225 @@
+wandb: Currently logged in as: mrheffels (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.10.8 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.10.7
+wandb: Syncing run upbeat-dew-80
+wandb: ⭐️ View project at https://wandb.ai/mrheffels/dd-ml-segmentation-benchmark
+wandb: 🚀 View run at https://wandb.ai/mrheffels/dd-ml-segmentation-benchmark/runs/3vt5e427
+wandb: Run data is saved locally in wandb/run-20201027_005242-3vt5e427
+wandb: Run `wandb off` to turn off syncing.
+zipfile "dataset-medium.tar.gz" already exists, remove it if you want to re-download.
+folder "dataset-medium" already exists, remove it if you want to re-create.
+chip folders "dataset-medium/image-chips" and "dataset-medium/label-chips" already exist, remove them to recreate chips.
+█epoch     train_loss  valid_loss  precision  recall    f_beta    time    
+██0         0.560383    0.625893    0.771457   0.779040  0.768028  31:01     
+Better model found at epoch 0 with valid_loss value: 0.6258931159973145.
+Better model found at epoch 0 with f_beta value: 0.7680283188819885 - exporting baseline_model
+██1         0.497617    0.531093    0.809315   0.816148  0.804562  30:15     
+Better model found at epoch 1 with valid_loss value: 0.5310925841331482.
+Better model found at epoch 1 with f_beta value: 0.8045623302459717 - exporting baseline_model
+██2         0.474294    0.597469    0.790997   0.771462  0.773817  30:16     
+██3         0.493745    0.543500    0.811681   0.806168  0.774154  30:21     
+██4         0.377612    0.671612    0.798864   0.790210  0.767688  30:28     
+██5         0.408036    0.570855    0.827989   0.833260  0.824992  30:10     
+Better model found at epoch 5 with f_beta value: 0.824992299079895 - exporting baseline_model
+██6         0.417923    0.681653    0.797856   0.783843  0.742906  30:21     
+██7         0.391741    0.583095    0.809306   0.815433  0.805062  30:15     
+██8         0.357918    0.592387    0.810822   0.818457  0.794017  30:18     
+██9         0.393714    0.614129    0.812331   0.802013  0.770275  30:19     
+██10        0.340215    0.644746    0.791397   0.798996  0.774770  30:36     
+██11        0.435537    0.558202    0.798116   0.800155  0.790159  30:32     
+██12        0.394739    0.565969    0.818130   0.812744  0.802221  30:21     
+██13        0.340263    0.741228    0.774814   0.762952  0.756419  30:10     
+██14        0.380011    0.698265    0.795787   0.805305  0.780451  30:04     
+██15        0.318115    0.950659    0.790310   0.799106  0.781312  30:05     
+██16        0.271177    0.613059    0.788195   0.787700  0.757418  30:03     
+██17        0.320815    0.730406    0.780812   0.774209  0.724682  29:57     
+██18        0.289002    0.936042    0.800208   0.798622  0.789604  30:20     
+██19        0.278878    7.962112    0.804350   0.813615  0.798071  31:07     
+██20        0.329822    0.560984    0.804597   0.818006  0.795054  30:39     
+██21        0.314672    0.582454    0.805702   0.815962  0.789409  30:01     
+██22        0.210187    0.583425    0.812962   0.817856  0.813588  29:55     
+██23        0.233562    0.711211    0.815228   0.816285  0.795062  30:17     
+██24        0.226384    0.680735    0.811216   0.816833  0.811860  30:55     
+██25        0.219317    0.611037    0.819091   0.830494  0.812387  30:50     
+██26        0.201063    0.670419    0.823395   0.828091  0.823096  31:39     
+██27        0.253686    0.697095    0.825122   0.830771  0.821903  31:04     
+██28        0.218317    1.546263    0.799732   0.818243  0.796887  31:47     
+██29        0.207316    1.006407    0.821176   0.832230  0.820473  31:35     
+██30        0.201299    5.680202    0.815095   0.828822  0.815929  29:57     
+██31        0.193076    1.112897    0.813932   0.823971  0.807911  31:21     
+██32        0.168333    2.479665    0.809300   0.821366  0.810423  31:25     
+██33        0.204137    7.400754    0.809503   0.823171  0.806547  30:01     
+██34        0.205181    8.593362    0.815849   0.830741  0.817060  30:11     
+██35        0.170352    6.477117    0.817174   0.827151  0.814814  31:22     
+██36        0.176297    3.251874    0.824786   0.833856  0.824672  31:23     
+██37        0.166510    36.452324   0.812313   0.826094  0.812314  30:37     
+██38        0.215136    5.126943    0.825635   0.835380  0.822757  30:42     
+██39        0.171395    4.194918    0.827449   0.837477  0.825585  31:12     
+Better model found at epoch 39 with f_beta value: 0.8255852460861206 - exporting baseline_model
+Loaded best saved model from wandb/run-20201027_005242-3vt5e427/files/bestmodel.pth
+loading model baseline_model ...
+running inference on image dataset-medium/images/1d4fbe33f3_F1BE1D4184INSPIRE-ortho.tif.
+loading input image (5542, 2962, 3)
+running inference on chip 0 of 15
+running inference on chip 1 of 15
+running inference on chip 2 of 15
+running inference on chip 3 of 15
+running inference on chip 4 of 15
+running inference on chip 5 of 15
+running inference on chip 6 of 15
+running inference on chip 7 of 15
+running inference on chip 8 of 15
+running inference on chip 9 of 15
+running inference on chip 10 of 15
+running inference on chip 11 of 15
+running inference on chip 12 of 15
+running inference on chip 13 of 15
+running inference on chip 14 of 15
+running inference on image dataset-medium/images/1df70e7340_4413A67E91INSPIRE-ortho.tif.
+loading input image (3057, 4777, 3)
+running inference on chip 0 of 12
+running inference on chip 1 of 12
+running inference on chip 2 of 12
+running inference on chip 3 of 12
+running inference on chip 4 of 12
+running inference on chip 5 of 12
+running inference on chip 6 of 12
+running inference on chip 7 of 12
+running inference on chip 8 of 12
+running inference on chip 9 of 12
+running inference on chip 10 of 12
+running inference on chip 11 of 12
+running inference on image dataset-medium/images/7008b80b00_FF24A4975DINSPIRE-ortho.tif.
+loading input image (4395, 5159, 3)
+running inference on chip 0 of 20
+running inference on chip 1 of 20
+running inference on chip 2 of 20
+running inference on chip 3 of 20
+running inference on chip 4 of 20
+running inference on chip 5 of 20
+running inference on chip 6 of 20
+running inference on chip 7 of 20
+running inference on chip 8 of 20
+running inference on chip 9 of 20
+running inference on chip 10 of 20
+running inference on chip 11 of 20
+running inference on chip 12 of 20
+running inference on chip 13 of 20
+running inference on chip 14 of 20
+running inference on chip 15 of 20
+running inference on chip 16 of 20
+running inference on chip 17 of 20
+running inference on chip 18 of 20
+running inference on chip 19 of 20
+running inference on image dataset-medium/images/c644f91210_27E21B7F30OPENPIPELINE-ortho.tif.
+loading input image (9364, 4682, 3)
+running inference on chip 0 of 32
+running inference on chip 1 of 32
+running inference on chip 2 of 32
+running inference on chip 3 of 32
+running inference on chip 4 of 32
+running inference on chip 5 of 32
+running inference on chip 6 of 32
+running inference on chip 7 of 32
+running inference on chip 8 of 32
+running inference on chip 9 of 32
+running inference on chip 10 of 32
+running inference on chip 11 of 32
+running inference on chip 12 of 32
+running inference on chip 13 of 32
+running inference on chip 14 of 32
+running inference on chip 15 of 32
+running inference on chip 16 of 32
+running inference on chip 17 of 32
+running inference on chip 18 of 32
+running inference on chip 19 of 32
+running inference on chip 20 of 32
+running inference on chip 21 of 32
+running inference on chip 22 of 32
+running inference on chip 23 of 32
+running inference on chip 24 of 32
+running inference on chip 25 of 32
+running inference on chip 26 of 32
+running inference on chip 27 of 32
+running inference on chip 28 of 32
+running inference on chip 29 of 32
+running inference on chip 30 of 32
+running inference on chip 31 of 32
+running inference on image dataset-medium/images/b705d0cc9c_E5F5E0E316OPENPIPELINE-ortho.tif.
+loading input image (7453, 5924, 3)
+running inference on chip 0 of 35
+running inference on chip 1 of 35
+running inference on chip 2 of 35
+running inference on chip 3 of 35
+running inference on chip 4 of 35
+running inference on chip 5 of 35
+running inference on chip 6 of 35
+running inference on chip 7 of 35
+running inference on chip 8 of 35
+running inference on chip 9 of 35
+running inference on chip 10 of 35
+running inference on chip 11 of 35
+running inference on chip 12 of 35
+running inference on chip 13 of 35
+running inference on chip 14 of 35
+running inference on chip 15 of 35
+running inference on chip 16 of 35
+running inference on chip 17 of 35
+running inference on chip 18 of 35
+running inference on chip 19 of 35
+running inference on chip 20 of 35
+running inference on chip 21 of 35
+running inference on chip 22 of 35
+running inference on chip 23 of 35
+running inference on chip 24 of 35
+running inference on chip 25 of 35
+running inference on chip 26 of 35
+running inference on chip 27 of 35
+running inference on chip 28 of 35
+running inference on chip 29 of 35
+running inference on chip 30 of 35
+running inference on chip 31 of 35
+running inference on chip 32 of 35
+running inference on chip 33 of 35
+running inference on chip 34 of 35
+running inference on image dataset-medium/images/a1af86939f_F1BE1D4184OPENPIPELINE-ortho.tif.
+loading input image (1911, 2102, 3)
+running inference on chip 0 of 4
+running inference on chip 1 of 4
+running inference on chip 2 of 4
+running inference on chip 3 of 4
+running inference on image dataset-medium/images/520947aa07_8FCB044F58OPENPIPELINE-ortho.tif.
+loading input image (4968, 4968, 3)
+running inference on chip 0 of 25
+running inference on chip 1 of 25
+running inference on chip 2 of 25
+running inference on chip 3 of 25
+running inference on chip 4 of 25
+running inference on chip 5 of 25
+running inference on chip 6 of 25
+running inference on chip 7 of 25
+running inference on chip 8 of 25
+running inference on chip 9 of 25
+running inference on chip 10 of 25
+running inference on chip 11 of 25
+running inference on chip 12 of 25
+running inference on chip 13 of 25
+running inference on chip 14 of 25
+running inference on chip 15 of 25
+running inference on chip 16 of 25
+running inference on chip 17 of 25
+running inference on chip 18 of 25
+running inference on chip 19 of 25
+running inference on chip 20 of 25
+running inference on chip 21 of 25
+running inference on chip 22 of 25
+running inference on chip 23 of 25
+running inference on chip 24 of 25
+running inference on image dataset-medium/images/2ef883f08d_F317F9C1DFOPENPIPELINE-ortho.tif.
+loading input image (7644, 6115, 3)
+running inference on chip 0 of 42
+running inference on chip 1 of 42
+running inference on chip 2 of 42
+running inference on chip 3 of 42
+running inference on chip 4 of 42
+running inference on chip 5 of 42
+running inference on chip 6 of 42
+running inference on chip 7 of 42
+running inference on chip 8 of 42
+running inference on chip 9 of 42
+running inference on chip 10 of 42
+running inference on chip 11 of 42
+running inference on chip 12 of 42
+running inference on chip 13 of 42
+running inference on chip 14 of 42
+running inference on chip 15 of 42
+running inference on chip 16 of 42
+running inference on chip 17 of 42
+running inference on chip 18 of 42
+running inference on chip 19 of 42
+running inference on chip 20 of 42
+running inference on chip 21 of 42
+running inference on chip 22 of 42
+running inference on chip 23 of 42
+running inference on chip 24 of 42
+running inference on chip 25 of 42
+running inference on chip 26 of 42
+running inference on chip 27 of 42
+running inference on chip 28 of 42
+running inference on chip 29 of 42
+running inference on chip 30 of 42
+running inference on chip 31 of 42
+running inference on chip 32 of 42
+running inference on chip 33 of 42
+running inference on chip 34 of 42
+running inference on chip 35 of 42
+running inference on chip 36 of 42
+running inference on chip 37 of 42
+running inference on chip 38 of 42
+running inference on chip 39 of 42
+running inference on chip 40 of 42
+running inference on chip 41 of 42
+running inference on image dataset-medium/images/f971256246_MIKEINSPIRE-ortho.tif.
+loading input image (4682, 4586, 3)
+running inference on chip 0 of 16
+running inference on chip 1 of 16
+running inference on chip 2 of 16
+running inference on chip 3 of 16
+running inference on chip 4 of 16
+running inference on chip 5 of 16
+running inference on chip 6 of 16
+running inference on chip 7 of 16
+running inference on chip 8 of 16
+running inference on chip 9 of 16
+running inference on chip 10 of 16
+running inference on chip 11 of 16
+running inference on chip 12 of 16
+running inference on chip 13 of 16
+running inference on chip 14 of 16
+running inference on chip 15 of 16
+running inference on image dataset-medium/images/2ef3a4994a_0CCD105428INSPIRE-ortho.tif.
+loading input image (2675, 3249, 3)
+running inference on chip 0 of 9
+running inference on chip 1 of 9
+running inference on chip 2 of 9
+running inference on chip 3 of 9
+running inference on chip 4 of 9
+running inference on chip 5 of 9
+running inference on chip 6 of 9
+running inference on chip 7 of 9
+running inference on chip 8 of 9
+running inference on image dataset-medium/images/888432f840_80E7FD39EBINSPIRE-ortho.tif.
+loading input image (7835, 12421, 3)
+running inference on chip 0 of 77
+running inference on chip 1 of 77
+running inference on chip 2 of 77
+running inference on chip 3 of 77
+running inference on chip 4 of 77
+running inference on chip 5 of 77
+running inference on chip 6 of 77
+running inference on chip 7 of 77
+running inference on chip 8 of 77
+running inference on chip 9 of 77
+running inference on chip 10 of 77
+running inference on chip 11 of 77
+running inference on chip 12 of 77
+running inference on chip 13 of 77
+running inference on chip 14 of 77
+running inference on chip 15 of 77
+running inference on chip 16 of 77
+running inference on chip 17 of 77
+running inference on chip 18 of 77
+running inference on chip 19 of 77
+running inference on chip 20 of 77
+running inference on chip 21 of 77
+running inference on chip 22 of 77
+running inference on chip 23 of 77
+running inference on chip 24 of 77
+running inference on chip 25 of 77
+running inference on chip 26 of 77
+running inference on chip 27 of 77
+running inference on chip 28 of 77
+running inference on chip 29 of 77
+running inference on chip 30 of 77
+running inference on chip 31 of 77
+running inference on chip 32 of 77
+running inference on chip 33 of 77
+running inference on chip 34 of 77
+running inference on chip 35 of 77
+running inference on chip 36 of 77
+running inference on chip 37 of 77
+running inference on chip 38 of 77
+running inference on chip 39 of 77
+running inference on chip 40 of 77
+running inference on chip 41 of 77
+running inference on chip 42 of 77
+running inference on chip 43 of 77
+running inference on chip 44 of 77
+running inference on chip 45 of 77
+running inference on chip 46 of 77
+running inference on chip 47 of 77
+running inference on chip 48 of 77
+running inference on chip 49 of 77
+running inference on chip 50 of 77
+running inference on chip 51 of 77
+running inference on chip 52 of 77
+running inference on chip 53 of 77
+running inference on chip 54 of 77
+running inference on chip 55 of 77
+running inference on chip 56 of 77
+running inference on chip 57 of 77
+running inference on chip 58 of 77
+running inference on chip 59 of 77
+running inference on chip 60 of 77
+running inference on chip 61 of 77
+running inference on chip 62 of 77
+running inference on chip 63 of 77
+running inference on chip 64 of 77
+running inference on chip 65 of 77
+running inference on chip 66 of 77
+running inference on chip 67 of 77
+running inference on chip 68 of 77
+running inference on chip 69 of 77
+running inference on chip 70 of 77
+running inference on chip 71 of 77
+running inference on chip 72 of 77
+running inference on chip 73 of 77
+running inference on chip 74 of 77
+running inference on chip 75 of 77
+running inference on chip 76 of 77
+running inference on image dataset-medium/images/130a76ebe1_68B40B480AOPENPIPELINE-ortho.tif.
+loading input image (8217, 5733, 3)
+running inference on chip 0 of 35
+running inference on chip 1 of 35
+running inference on chip 2 of 35
+running inference on chip 3 of 35
+running inference on chip 4 of 35
+running inference on chip 5 of 35
+running inference on chip 6 of 35
+running inference on chip 7 of 35
+running inference on chip 8 of 35
+running inference on chip 9 of 35
+running inference on chip 10 of 35
+running inference on chip 11 of 35
+running inference on chip 12 of 35
+running inference on chip 13 of 35
+running inference on chip 14 of 35
+running inference on chip 15 of 35
+running inference on chip 16 of 35
+running inference on chip 17 of 35
+running inference on chip 18 of 35
+running inference on chip 19 of 35
+running inference on chip 20 of 35
+running inference on chip 21 of 35
+running inference on chip 22 of 35
+running inference on chip 23 of 35
+running inference on chip 24 of 35
+running inference on chip 25 of 35
+running inference on chip 26 of 35
+running inference on chip 27 of 35
+running inference on chip 28 of 35
+running inference on chip 29 of 35
+running inference on chip 30 of 35
+running inference on chip 31 of 35
+running inference on chip 32 of 35
+running inference on chip 33 of 35
+running inference on chip 34 of 35
+running inference on image dataset-medium/images/11cdce7802_B6A62F8BE0INSPIRE-ortho.tif.
+loading input image (3822, 8408, 3)
+running inference on chip 0 of 32
+running inference on chip 1 of 32
+running inference on chip 2 of 32
+running inference on chip 3 of 32
+running inference on chip 4 of 32
+running inference on chip 5 of 32
+running inference on chip 6 of 32
+running inference on chip 7 of 32
+running inference on chip 8 of 32
+running inference on chip 9 of 32
+running inference on chip 10 of 32
+running inference on chip 11 of 32
+running inference on chip 12 of 32
+running inference on chip 13 of 32
+running inference on chip 14 of 32
+running inference on chip 15 of 32
+running inference on chip 16 of 32
+running inference on chip 17 of 32
+running inference on chip 18 of 32
+running inference on chip 19 of 32
+running inference on chip 20 of 32
+running inference on chip 21 of 32
+running inference on chip 22 of 32
+running inference on chip 23 of 32
+running inference on chip 24 of 32
+running inference on chip 25 of 32
+running inference on chip 26 of 32
+running inference on chip 27 of 32
+running inference on chip 28 of 32
+running inference on chip 29 of 32
+running inference on chip 30 of 32
+running inference on chip 31 of 32
+running inference on image dataset-medium/images/3502e187b2_23071E4605OPENPIPELINE-ortho.tif.
+loading input image (8217, 5064, 3)
+running inference on chip 0 of 35
+running inference on chip 1 of 35
+running inference on chip 2 of 35
+running inference on chip 3 of 35
+running inference on chip 4 of 35
+running inference on chip 5 of 35
+running inference on chip 6 of 35
+running inference on chip 7 of 35
+running inference on chip 8 of 35
+running inference on chip 9 of 35
+running inference on chip 10 of 35
+running inference on chip 11 of 35
+running inference on chip 12 of 35
+running inference on chip 13 of 35
+running inference on chip 14 of 35
+running inference on chip 15 of 35
+running inference on chip 16 of 35
+running inference on chip 17 of 35
+running inference on chip 18 of 35
+running inference on chip 19 of 35
+running inference on chip 20 of 35
+running inference on chip 21 of 35
+running inference on chip 22 of 35
+running inference on chip 23 of 35
+running inference on chip 24 of 35
+running inference on chip 25 of 35
+running inference on chip 26 of 35
+running inference on chip 27 of 35
+running inference on chip 28 of 35
+running inference on chip 29 of 35
+running inference on chip 30 of 35
+running inference on chip 31 of 35
+running inference on chip 32 of 35
+running inference on chip 33 of 35
+running inference on chip 34 of 35
+running inference on image dataset-medium/images/f9f43e5144_1DB9E6F68BINSPIRE-ortho.tif.
+loading input image (6688, 12039, 3)
+running inference on chip 0 of 66
+running inference on chip 1 of 66
+running inference on chip 2 of 66
+running inference on chip 3 of 66
+running inference on chip 4 of 66
+running inference on chip 5 of 66
+running inference on chip 6 of 66
+running inference on chip 7 of 66
+running inference on chip 8 of 66
+running inference on chip 9 of 66
+running inference on chip 10 of 66
+running inference on chip 11 of 66
+running inference on chip 12 of 66
+running inference on chip 13 of 66
+running inference on chip 14 of 66
+running inference on chip 15 of 66
+running inference on chip 16 of 66
+running inference on chip 17 of 66
+running inference on chip 18 of 66
+running inference on chip 19 of 66
+running inference on chip 20 of 66
+running inference on chip 21 of 66
+running inference on chip 22 of 66
+running inference on chip 23 of 66
+running inference on chip 24 of 66
+running inference on chip 25 of 66
+running inference on chip 26 of 66
+running inference on chip 27 of 66
+running inference on chip 28 of 66
+running inference on chip 29 of 66
+running inference on chip 30 of 66
+running inference on chip 31 of 66
+running inference on chip 32 of 66
+running inference on chip 33 of 66
+running inference on chip 34 of 66
+running inference on chip 35 of 66
+running inference on chip 36 of 66
+running inference on chip 37 of 66
+running inference on chip 38 of 66
+running inference on chip 39 of 66
+running inference on chip 40 of 66
+running inference on chip 41 of 66
+running inference on chip 42 of 66
+running inference on chip 43 of 66
+running inference on chip 44 of 66
+running inference on chip 45 of 66
+running inference on chip 46 of 66
+running inference on chip 47 of 66
+running inference on chip 48 of 66
+running inference on chip 49 of 66
+running inference on chip 50 of 66
+running inference on chip 51 of 66
+running inference on chip 52 of 66
+running inference on chip 53 of 66
+running inference on chip 54 of 66
+running inference on chip 55 of 66
+running inference on chip 56 of 66
+running inference on chip 57 of 66
+running inference on chip 58 of 66
+running inference on chip 59 of 66
+running inference on chip 60 of 66
+running inference on chip 61 of 66
+running inference on chip 62 of 66
+running inference on chip 63 of 66
+running inference on chip 64 of 66
+running inference on chip 65 of 66
+running inference on image dataset-medium/images/1553627230_APIGENERATED-ortho.tif.
+loading input image (12230, 4013, 3)
+running inference on chip 0 of 44
+running inference on chip 1 of 44
+running inference on chip 2 of 44
+running inference on chip 3 of 44
+running inference on chip 4 of 44
+running inference on chip 5 of 44
+running inference on chip 6 of 44
+running inference on chip 7 of 44
+running inference on chip 8 of 44
+running inference on chip 9 of 44
+running inference on chip 10 of 44
+running inference on chip 11 of 44
+running inference on chip 12 of 44
+running inference on chip 13 of 44
+running inference on chip 14 of 44
+running inference on chip 15 of 44
+running inference on chip 16 of 44
+running inference on chip 17 of 44
+running inference on chip 18 of 44
+running inference on chip 19 of 44
+running inference on chip 20 of 44
+running inference on chip 21 of 44
+running inference on chip 22 of 44
+running inference on chip 23 of 44
+running inference on chip 24 of 44
+running inference on chip 25 of 44
+running inference on chip 26 of 44
+running inference on chip 27 of 44
+running inference on chip 28 of 44
+running inference on chip 29 of 44
+running inference on chip 30 of 44
+running inference on chip 31 of 44
+running inference on chip 32 of 44
+running inference on chip 33 of 44
+running inference on chip 34 of 44
+running inference on chip 35 of 44
+running inference on chip 36 of 44
+running inference on chip 37 of 44
+running inference on chip 38 of 44
+running inference on chip 39 of 44
+running inference on chip 40 of 44
+running inference on chip 41 of 44
+running inference on chip 42 of 44
+running inference on chip 43 of 44
+running inference on image dataset-medium/images/ebffe540d0_7BA042D858OPENPIPELINE-ortho.tif.
+loading input image (2867, 2389, 3)
+running inference on chip 0 of 6
+running inference on chip 1 of 6
+running inference on chip 2 of 6
+running inference on chip 3 of 6
+running inference on chip 4 of 6
+running inference on chip 5 of 6
+running inference on image dataset-medium/images/d9161f7e18_C05BA1BC72OPENPIPELINE-ortho.tif.
+loading input image (3153, 3440, 3)
+running inference on chip 0 of 9
+running inference on chip 1 of 9
+running inference on chip 2 of 9
+running inference on chip 3 of 9
+running inference on chip 4 of 9
+running inference on chip 5 of 9
+running inference on chip 6 of 9
+running inference on chip 7 of 9
+running inference on chip 8 of 9
+running inference on image dataset-medium/images/34fbf7c2bd_E8AD935CEDINSPIRE-ortho.tif.
+loading input image (1911, 19109, 3)
+running inference on chip 0 of 32
+running inference on chip 1 of 32
+running inference on chip 2 of 32
+running inference on chip 3 of 32
+running inference on chip 4 of 32
+running inference on chip 5 of 32
+running inference on chip 6 of 32
+running inference on chip 7 of 32
+running inference on chip 8 of 32
+running inference on chip 9 of 32
+running inference on chip 10 of 32
+running inference on chip 11 of 32
+running inference on chip 12 of 32
+running inference on chip 13 of 32
+running inference on chip 14 of 32
+running inference on chip 15 of 32
+running inference on chip 16 of 32
+running inference on chip 17 of 32
+running inference on chip 18 of 32
+running inference on chip 19 of 32
+running inference on chip 20 of 32
+running inference on chip 21 of 32
+running inference on chip 22 of 32
+running inference on chip 23 of 32
+running inference on chip 24 of 32
+running inference on chip 25 of 32
+running inference on chip 26 of 32
+running inference on chip 27 of 32
+running inference on chip 28 of 32
+running inference on chip 29 of 32
+running inference on chip 30 of 32
+running inference on chip 31 of 32
+running inference on image dataset-medium/images/15efe45820_D95DF0B1F4INSPIRE-ortho.tif.
+loading input image (12039, 13854, 3)
+running inference on chip 0 of 132
+running inference on chip 1 of 132
+running inference on chip 2 of 132
+running inference on chip 3 of 132
+running inference on chip 4 of 132
+running inference on chip 5 of 132
+running inference on chip 6 of 132
+running inference on chip 7 of 132
+running inference on chip 8 of 132
+running inference on chip 9 of 132
+running inference on chip 10 of 132
+running inference on chip 11 of 132
+running inference on chip 12 of 132
+running inference on chip 13 of 132
+running inference on chip 14 of 132
+running inference on chip 15 of 132
+running inference on chip 16 of 132
+running inference on chip 17 of 132
+running inference on chip 18 of 132
+running inference on chip 19 of 132
+running inference on chip 20 of 132
+running inference on chip 21 of 132
+running inference on chip 22 of 132
+running inference on chip 23 of 132
+running inference on chip 24 of 132
+running inference on chip 25 of 132
+running inference on chip 26 of 132
+running inference on chip 27 of 132
+running inference on chip 28 of 132
+running inference on chip 29 of 132
+running inference on chip 30 of 132
+running inference on chip 31 of 132
+running inference on chip 32 of 132
+running inference on chip 33 of 132
+running inference on chip 34 of 132
+running inference on chip 35 of 132
+running inference on chip 36 of 132
+running inference on chip 37 of 132
+running inference on chip 38 of 132
+running inference on chip 39 of 132
+running inference on chip 40 of 132
+running inference on chip 41 of 132
+running inference on chip 42 of 132
+running inference on chip 43 of 132
+running inference on chip 44 of 132
+running inference on chip 45 of 132
+running inference on chip 46 of 132
+running inference on chip 47 of 132
+running inference on chip 48 of 132
+running inference on chip 49 of 132
+running inference on chip 50 of 132
+running inference on chip 51 of 132
+running inference on chip 52 of 132
+running inference on chip 53 of 132
+running inference on chip 54 of 132
+running inference on chip 55 of 132
+running inference on chip 56 of 132
+running inference on chip 57 of 132
+running inference on chip 58 of 132
+running inference on chip 59 of 132
+running inference on chip 60 of 132
+running inference on chip 61 of 132
+running inference on chip 62 of 132
+running inference on chip 63 of 132
+running inference on chip 64 of 132
+running inference on chip 65 of 132
+running inference on chip 66 of 132
+running inference on chip 67 of 132
+running inference on chip 68 of 132
+running inference on chip 69 of 132
+running inference on chip 70 of 132
+running inference on chip 71 of 132
+running inference on chip 72 of 132
+running inference on chip 73 of 132
+running inference on chip 74 of 132
+running inference on chip 75 of 132
+running inference on chip 76 of 132
+running inference on chip 77 of 132
+running inference on chip 78 of 132
+running inference on chip 79 of 132
+running inference on chip 80 of 132
+running inference on chip 81 of 132
+running inference on chip 82 of 132
+running inference on chip 83 of 132
+running inference on chip 84 of 132
+running inference on chip 85 of 132
+running inference on chip 86 of 132
+running inference on chip 87 of 132
+running inference on chip 88 of 132
+running inference on chip 89 of 132
+running inference on chip 90 of 132
+running inference on chip 91 of 132
+running inference on chip 92 of 132
+running inference on chip 93 of 132
+running inference on chip 94 of 132
+running inference on chip 95 of 132
+running inference on chip 96 of 132
+running inference on chip 97 of 132
+running inference on chip 98 of 132
+running inference on chip 99 of 132
+running inference on chip 100 of 132
+running inference on chip 101 of 132
+running inference on chip 102 of 132
+running inference on chip 103 of 132
+running inference on chip 104 of 132
+running inference on chip 105 of 132
+running inference on chip 106 of 132
+running inference on chip 107 of 132
+running inference on chip 108 of 132
+running inference on chip 109 of 132
+running inference on chip 110 of 132
+running inference on chip 111 of 132
+running inference on chip 112 of 132
+running inference on chip 113 of 132
+running inference on chip 114 of 132
+running inference on chip 115 of 132
+running inference on chip 116 of 132
+running inference on chip 117 of 132
+running inference on chip 118 of 132
+running inference on chip 119 of 132
+running inference on chip 120 of 132
+running inference on chip 121 of 132
+running inference on chip 122 of 132
+running inference on chip 123 of 132
+running inference on chip 124 of 132
+running inference on chip 125 of 132
+running inference on chip 126 of 132
+running inference on chip 127 of 132
+running inference on chip 128 of 132
+running inference on chip 129 of 132
+running inference on chip 130 of 132
+running inference on chip 131 of 132
+running inference on image dataset-medium/images/2552eb56dd_2AABB46C86OPENPIPELINE-ortho.tif.
+loading input image (3631, 1051, 3)
+running inference on chip 0 of 4
+running inference on chip 1 of 4
+running inference on chip 2 of 4
+running inference on chip 3 of 4
+running inference on image dataset-medium/images/1553541487_APIGENERATED-ortho.tif.
+loading input image (9364, 5351, 3)
+running inference on chip 0 of 40
+running inference on chip 1 of 40
+running inference on chip 2 of 40
+running inference on chip 3 of 40
+running inference on chip 4 of 40
+running inference on chip 5 of 40
+running inference on chip 6 of 40
+running inference on chip 7 of 40
+running inference on chip 8 of 40
+running inference on chip 9 of 40
+running inference on chip 10 of 40
+running inference on chip 11 of 40
+running inference on chip 12 of 40
+running inference on chip 13 of 40
+running inference on chip 14 of 40
+running inference on chip 15 of 40
+running inference on chip 16 of 40
+running inference on chip 17 of 40
+running inference on chip 18 of 40
+running inference on chip 19 of 40
+running inference on chip 20 of 40
+running inference on chip 21 of 40
+running inference on chip 22 of 40
+running inference on chip 23 of 40
+running inference on chip 24 of 40
+running inference on chip 25 of 40
+running inference on chip 26 of 40
+running inference on chip 27 of 40
+running inference on chip 28 of 40
+running inference on chip 29 of 40
+running inference on chip 30 of 40
+running inference on chip 31 of 40
+running inference on chip 32 of 40
+running inference on chip 33 of 40
+running inference on chip 34 of 40
+running inference on chip 35 of 40
+running inference on chip 36 of 40
+running inference on chip 37 of 40
+running inference on chip 38 of 40
+running inference on chip 39 of 40
+running inference on image dataset-medium/images/84410645db_8D20F02042OPENPIPELINE-ortho.tif.
+loading input image (10415, 11752, 3)
+running inference on chip 0 of 90
+running inference on chip 1 of 90
+running inference on chip 2 of 90
+running inference on chip 3 of 90
+running inference on chip 4 of 90
+running inference on chip 5 of 90
+running inference on chip 6 of 90
+running inference on chip 7 of 90
+running inference on chip 8 of 90
+running inference on chip 9 of 90
+running inference on chip 10 of 90
+running inference on chip 11 of 90
+running inference on chip 12 of 90
+running inference on chip 13 of 90
+running inference on chip 14 of 90
+running inference on chip 15 of 90
+running inference on chip 16 of 90
+running inference on chip 17 of 90
+running inference on chip 18 of 90
+running inference on chip 19 of 90
+running inference on chip 20 of 90
+running inference on chip 21 of 90
+running inference on chip 22 of 90
+running inference on chip 23 of 90
+running inference on chip 24 of 90
+running inference on chip 25 of 90
+running inference on chip 26 of 90
+running inference on chip 27 of 90
+running inference on chip 28 of 90
+running inference on chip 29 of 90
+running inference on chip 30 of 90
+running inference on chip 31 of 90
+running inference on chip 32 of 90
+running inference on chip 33 of 90
+running inference on chip 34 of 90
+running inference on chip 35 of 90
+running inference on chip 36 of 90
+running inference on chip 37 of 90
+running inference on chip 38 of 90
+running inference on chip 39 of 90
+running inference on chip 40 of 90
+running inference on chip 41 of 90
+running inference on chip 42 of 90
+running inference on chip 43 of 90
+running inference on chip 44 of 90
+running inference on chip 45 of 90
+running inference on chip 46 of 90
+running inference on chip 47 of 90
+running inference on chip 48 of 90
+running inference on chip 49 of 90
+running inference on chip 50 of 90
+running inference on chip 51 of 90
+running inference on chip 52 of 90
+running inference on chip 53 of 90
+running inference on chip 54 of 90
+running inference on chip 55 of 90
+running inference on chip 56 of 90
+running inference on chip 57 of 90
+running inference on chip 58 of 90
+running inference on chip 59 of 90
+running inference on chip 60 of 90
+running inference on chip 61 of 90
+running inference on chip 62 of 90
+running inference on chip 63 of 90
+running inference on chip 64 of 90
+running inference on chip 65 of 90
+running inference on chip 66 of 90
+running inference on chip 67 of 90
+running inference on chip 68 of 90
+running inference on chip 69 of 90
+running inference on chip 70 of 90
+running inference on chip 71 of 90
+running inference on chip 72 of 90
+running inference on chip 73 of 90
+running inference on chip 74 of 90
+running inference on chip 75 of 90
+running inference on chip 76 of 90
+running inference on chip 77 of 90
+running inference on chip 78 of 90
+running inference on chip 79 of 90
+running inference on chip 80 of 90
+running inference on chip 81 of 90
+running inference on chip 82 of 90
+running inference on chip 83 of 90
+running inference on chip 84 of 90
+running inference on chip 85 of 90
+running inference on chip 86 of 90
+running inference on chip 87 of 90
+running inference on chip 88 of 90
+running inference on chip 89 of 90
+running inference on image dataset-medium/images/f0747ed88d_E74C0DD8FDOPENPIPELINE-ortho.tif.
+loading input image (1529, 1433, 3)
+running inference on chip 0 of 4
+running inference on chip 1 of 4
+running inference on chip 2 of 4
+running inference on chip 3 of 4
+running inference on image dataset-medium/images/c6d131e346_536DE05ED2OPENPIPELINE-ortho.tif.
+loading input image (3249, 3822, 3)
+running inference on chip 0 of 12
+running inference on chip 1 of 12
+running inference on chip 2 of 12
+running inference on chip 3 of 12
+running inference on chip 4 of 12
+running inference on chip 5 of 12
+running inference on chip 6 of 12
+running inference on chip 7 of 12
+running inference on chip 8 of 12
+running inference on chip 9 of 12
+running inference on chip 10 of 12
+running inference on chip 11 of 12
+running inference on image dataset-medium/images/b61673f780_4413A67E91INSPIRE-ortho.tif.
+loading input image (3822, 4204, 3)
+running inference on chip 0 of 16
+running inference on chip 1 of 16
+running inference on chip 2 of 16
+running inference on chip 3 of 16
+running inference on chip 4 of 16
+running inference on chip 5 of 16
+running inference on chip 6 of 16
+running inference on chip 7 of 16
+running inference on chip 8 of 16
+running inference on chip 9 of 16
+running inference on chip 10 of 16
+running inference on chip 11 of 16
+running inference on chip 12 of 16
+running inference on chip 13 of 16
+running inference on chip 14 of 16
+running inference on chip 15 of 16
+running inference on image dataset-medium/images/7c719dfcc0_310490364FINSPIRE-ortho.tif.
+loading input image (4395, 3440, 3)
+running inference on chip 0 of 12
+running inference on chip 1 of 12
+running inference on chip 2 of 12
+running inference on chip 3 of 12
+running inference on chip 4 of 12
+running inference on chip 5 of 12
+running inference on chip 6 of 12
+running inference on chip 7 of 12
+running inference on chip 8 of 12
+running inference on chip 9 of 12
+running inference on chip 10 of 12
+running inference on chip 11 of 12
+running inference on image dataset-medium/images/f56b6b2232_2A62B67B52OPENPIPELINE-ortho.tif.
+loading input image (2293, 2484, 3)
+running inference on chip 0 of 6
+running inference on chip 1 of 6
+running inference on chip 2 of 6
+running inference on chip 3 of 6
+running inference on chip 4 of 6
+running inference on chip 5 of 6
+running inference on image dataset-medium/images/c37dbfae2f_84B52814D2OPENPIPELINE-ortho.tif.
+loading input image (3631, 12039, 3)
+running inference on chip 0 of 44
+running inference on chip 1 of 44
+running inference on chip 2 of 44
+running inference on chip 3 of 44
+running inference on chip 4 of 44
+running inference on chip 5 of 44
+running inference on chip 6 of 44
+running inference on chip 7 of 44
+running inference on chip 8 of 44
+running inference on chip 9 of 44
+running inference on chip 10 of 44
+running inference on chip 11 of 44
+running inference on chip 12 of 44
+running inference on chip 13 of 44
+running inference on chip 14 of 44
+running inference on chip 15 of 44
+running inference on chip 16 of 44
+running inference on chip 17 of 44
+running inference on chip 18 of 44
+running inference on chip 19 of 44
+running inference on chip 20 of 44
+running inference on chip 21 of 44
+running inference on chip 22 of 44
+running inference on chip 23 of 44
+running inference on chip 24 of 44
+running inference on chip 25 of 44
+running inference on chip 26 of 44
+running inference on chip 27 of 44
+running inference on chip 28 of 44
+running inference on chip 29 of 44
+running inference on chip 30 of 44
+running inference on chip 31 of 44
+running inference on chip 32 of 44
+running inference on chip 33 of 44
+running inference on chip 34 of 44
+running inference on chip 35 of 44
+running inference on chip 36 of 44
+running inference on chip 37 of 44
+running inference on chip 38 of 44
+running inference on chip 39 of 44
+running inference on chip 40 of 44
+running inference on chip 41 of 44
+running inference on chip 42 of 44
+running inference on chip 43 of 44
+running inference on image dataset-medium/images/5fa39d6378_DB9FF730D9OPENPIPELINE-ortho.tif.
+loading input image (9077, 9077, 3)
+running inference on chip 0 of 64
+running inference on chip 1 of 64
+running inference on chip 2 of 64
+running inference on chip 3 of 64
+running inference on chip 4 of 64
+running inference on chip 5 of 64
+running inference on chip 6 of 64
+running inference on chip 7 of 64
+running inference on chip 8 of 64
+running inference on chip 9 of 64
+running inference on chip 10 of 64
+running inference on chip 11 of 64
+running inference on chip 12 of 64
+running inference on chip 13 of 64
+running inference on chip 14 of 64
+running inference on chip 15 of 64
+running inference on chip 16 of 64
+running inference on chip 17 of 64
+running inference on chip 18 of 64
+running inference on chip 19 of 64
+running inference on chip 20 of 64
+running inference on chip 21 of 64
+running inference on chip 22 of 64
+running inference on chip 23 of 64
+running inference on chip 24 of 64
+running inference on chip 25 of 64
+running inference on chip 26 of 64
+running inference on chip 27 of 64
+running inference on chip 28 of 64
+running inference on chip 29 of 64
+running inference on chip 30 of 64
+running inference on chip 31 of 64
+running inference on chip 32 of 64
+running inference on chip 33 of 64
+running inference on chip 34 of 64
+running inference on chip 35 of 64
+running inference on chip 36 of 64
+running inference on chip 37 of 64
+running inference on chip 38 of 64
+running inference on chip 39 of 64
+running inference on chip 40 of 64
+running inference on chip 41 of 64
+running inference on chip 42 of 64
+running inference on chip 43 of 64
+running inference on chip 44 of 64
+running inference on chip 45 of 64
+running inference on chip 46 of 64
+running inference on chip 47 of 64
+running inference on chip 48 of 64
+running inference on chip 49 of 64
+running inference on chip 50 of 64
+running inference on chip 51 of 64
+running inference on chip 52 of 64
+running inference on chip 53 of 64
+running inference on chip 54 of 64
+running inference on chip 55 of 64
+running inference on chip 56 of 64
+running inference on chip 57 of 64
+running inference on chip 58 of 64
+running inference on chip 59 of 64
+running inference on chip 60 of 64
+running inference on chip 61 of 64
+running inference on chip 62 of 64
+running inference on chip 63 of 64
+running inference on image dataset-medium/images/f4dd768188_NOLANOPENPIPELINE-ortho.tif.
+loading input image (4873, 4873, 3)
+running inference on chip 0 of 25
+running inference on chip 1 of 25
+running inference on chip 2 of 25
+running inference on chip 3 of 25
+running inference on chip 4 of 25
+running inference on chip 5 of 25
+running inference on chip 6 of 25
+running inference on chip 7 of 25
+running inference on chip 8 of 25
+running inference on chip 9 of 25
+running inference on chip 10 of 25
+running inference on chip 11 of 25
+running inference on chip 12 of 25
+running inference on chip 13 of 25
+running inference on chip 14 of 25
+running inference on chip 15 of 25
+running inference on chip 16 of 25
+running inference on chip 17 of 25
+running inference on chip 18 of 25
+running inference on chip 19 of 25
+running inference on chip 20 of 25
+running inference on chip 21 of 25
+running inference on chip 22 of 25
+running inference on chip 23 of 25
+running inference on chip 24 of 25
+running inference on image dataset-medium/images/b771104de5_7E02A41EBEOPENPIPELINE-ortho.tif.
+loading input image (3344, 2293, 3)
+running inference on chip 0 of 6
+running inference on chip 1 of 6
+running inference on chip 2 of 6
+running inference on chip 3 of 6
+running inference on chip 4 of 6
+running inference on chip 5 of 6
+running inference on image dataset-medium/images/1553541585_APIGENERATED-ortho.tif.
+loading input image (8217, 8026, 3)
+running inference on chip 0 of 49
+running inference on chip 1 of 49
+running inference on chip 2 of 49
+running inference on chip 3 of 49
+running inference on chip 4 of 49
+running inference on chip 5 of 49
+running inference on chip 6 of 49
+running inference on chip 7 of 49
+running inference on chip 8 of 49
+running inference on chip 9 of 49
+running inference on chip 10 of 49
+running inference on chip 11 of 49
+running inference on chip 12 of 49
+running inference on chip 13 of 49
+running inference on chip 14 of 49
+running inference on chip 15 of 49
+running inference on chip 16 of 49
+running inference on chip 17 of 49
+running inference on chip 18 of 49
+running inference on chip 19 of 49
+running inference on chip 20 of 49
+running inference on chip 21 of 49
+running inference on chip 22 of 49
+running inference on chip 23 of 49
+running inference on chip 24 of 49
+running inference on chip 25 of 49
+running inference on chip 26 of 49
+running inference on chip 27 of 49
+running inference on chip 28 of 49
+running inference on chip 29 of 49
+running inference on chip 30 of 49
+running inference on chip 31 of 49
+running inference on chip 32 of 49
+running inference on chip 33 of 49
+running inference on chip 34 of 49
+running inference on chip 35 of 49
+running inference on chip 36 of 49
+running inference on chip 37 of 49
+running inference on chip 38 of 49
+running inference on chip 39 of 49
+running inference on chip 40 of 49
+running inference on chip 41 of 49
+running inference on chip 42 of 49
+running inference on chip 43 of 49
+running inference on chip 44 of 49
+running inference on chip 45 of 49
+running inference on chip 46 of 49
+running inference on chip 47 of 49
+running inference on chip 48 of 49
+running inference on image dataset-medium/images/1d056881e8_29FEA32BC7INSPIRE-ortho.tif.
+loading input image (10701, 9937, 3)
+running inference on chip 0 of 81
+running inference on chip 1 of 81
+running inference on chip 2 of 81
+running inference on chip 3 of 81
+running inference on chip 4 of 81
+running inference on chip 5 of 81
+running inference on chip 6 of 81
+running inference on chip 7 of 81
+running inference on chip 8 of 81
+running inference on chip 9 of 81
+running inference on chip 10 of 81
+running inference on chip 11 of 81
+running inference on chip 12 of 81
+running inference on chip 13 of 81
+running inference on chip 14 of 81
+running inference on chip 15 of 81
+running inference on chip 16 of 81
+running inference on chip 17 of 81
+running inference on chip 18 of 81
+running inference on chip 19 of 81
+running inference on chip 20 of 81
+running inference on chip 21 of 81
+running inference on chip 22 of 81
+running inference on chip 23 of 81
+running inference on chip 24 of 81
+running inference on chip 25 of 81
+running inference on chip 26 of 81
+running inference on chip 27 of 81
+running inference on chip 28 of 81
+running inference on chip 29 of 81
+running inference on chip 30 of 81
+running inference on chip 31 of 81
+running inference on chip 32 of 81
+running inference on chip 33 of 81
+running inference on chip 34 of 81
+running inference on chip 35 of 81
+running inference on chip 36 of 81
+running inference on chip 37 of 81
+running inference on chip 38 of 81
+running inference on chip 39 of 81
+running inference on chip 40 of 81
+running inference on chip 41 of 81
+running inference on chip 42 of 81
+running inference on chip 43 of 81
+running inference on chip 44 of 81
+running inference on chip 45 of 81
+running inference on chip 46 of 81
+running inference on chip 47 of 81
+running inference on chip 48 of 81
+running inference on chip 49 of 81
+running inference on chip 50 of 81
+running inference on chip 51 of 81
+running inference on chip 52 of 81
+running inference on chip 53 of 81
+running inference on chip 54 of 81
+running inference on chip 55 of 81
+running inference on chip 56 of 81
+running inference on chip 57 of 81
+running inference on chip 58 of 81
+running inference on chip 59 of 81
+running inference on chip 60 of 81
+running inference on chip 61 of 81
+running inference on chip 62 of 81
+running inference on chip 63 of 81
+running inference on chip 64 of 81
+running inference on chip 65 of 81
+running inference on chip 66 of 81
+running inference on chip 67 of 81
+running inference on chip 68 of 81
+running inference on chip 69 of 81
+running inference on chip 70 of 81
+running inference on chip 71 of 81
+running inference on chip 72 of 81
+running inference on chip 73 of 81
+running inference on chip 74 of 81
+running inference on chip 75 of 81
+running inference on chip 76 of 81
+running inference on chip 77 of 81
+running inference on chip 78 of 81
+running inference on chip 79 of 81
+running inference on chip 80 of 81
+running inference on image dataset-medium/images/fc5837dcf8_7CD52BE09EINSPIRE-ortho.tif.
+loading input image (4777, 4395, 3)
+running inference on chip 0 of 16
+running inference on chip 1 of 16
+running inference on chip 2 of 16
+running inference on chip 3 of 16
+running inference on chip 4 of 16
+running inference on chip 5 of 16
+running inference on chip 6 of 16
+running inference on chip 7 of 16
+running inference on chip 8 of 16
+running inference on chip 9 of 16
+running inference on chip 10 of 16
+running inference on chip 11 of 16
+running inference on chip 12 of 16
+running inference on chip 13 of 16
+running inference on chip 14 of 16
+running inference on chip 15 of 16
+running inference on image dataset-medium/images/ec09336a6f_06BA0AF311OPENPIPELINE-ortho.tif.
+loading input image (4968, 7262, 3)
+running inference on chip 0 of 35
+running inference on chip 1 of 35
+running inference on chip 2 of 35
+running inference on chip 3 of 35
+running inference on chip 4 of 35
+running inference on chip 5 of 35
+running inference on chip 6 of 35
+running inference on chip 7 of 35
+running inference on chip 8 of 35
+running inference on chip 9 of 35
+running inference on chip 10 of 35
+running inference on chip 11 of 35
+running inference on chip 12 of 35
+running inference on chip 13 of 35
+running inference on chip 14 of 35
+running inference on chip 15 of 35
+running inference on chip 16 of 35
+running inference on chip 17 of 35
+running inference on chip 18 of 35
+running inference on chip 19 of 35
+running inference on chip 20 of 35
+running inference on chip 21 of 35
+running inference on chip 22 of 35
+running inference on chip 23 of 35
+running inference on chip 24 of 35
+running inference on chip 25 of 35
+running inference on chip 26 of 35
+running inference on chip 27 of 35
+running inference on chip 28 of 35
+running inference on chip 29 of 35
+running inference on chip 30 of 35
+running inference on chip 31 of 35
+running inference on chip 32 of 35
+running inference on chip 33 of 35
+running inference on chip 34 of 35
+running inference on image dataset-medium/images/c8a7031e5f_32156F5DC2INSPIRE-ortho.tif.
+loading input image (5159, 5733, 3)
+running inference on chip 0 of 25
+running inference on chip 1 of 25
+running inference on chip 2 of 25
+running inference on chip 3 of 25
+running inference on chip 4 of 25
+running inference on chip 5 of 25
+running inference on chip 6 of 25
+running inference on chip 7 of 25
+running inference on chip 8 of 25
+running inference on chip 9 of 25
+running inference on chip 10 of 25
+running inference on chip 11 of 25
+running inference on chip 12 of 25
+running inference on chip 13 of 25
+running inference on chip 14 of 25
+running inference on chip 15 of 25
+running inference on chip 16 of 25
+running inference on chip 17 of 25
+running inference on chip 18 of 25
+running inference on chip 19 of 25
+running inference on chip 20 of 25
+running inference on chip 21 of 25
+running inference on chip 22 of 25
+running inference on chip 23 of 25
+running inference on chip 24 of 25
+running inference on image dataset-medium/images/cc4b443c7d_A9CBEF2C97INSPIRE-ortho.tif.
+loading input image (3440, 2866, 3)
+running inference on chip 0 of 9
+running inference on chip 1 of 9
+running inference on chip 2 of 9
+running inference on chip 3 of 9
+running inference on chip 4 of 9
+running inference on chip 5 of 9
+running inference on chip 6 of 9
+running inference on chip 7 of 9
+running inference on chip 8 of 9
+running inference on image dataset-medium/images/57426ebe1e_84B52814D2OPENPIPELINE-ortho.tif.
+loading input image (3822, 3822, 3)
+running inference on chip 0 of 16
+running inference on chip 1 of 16
+running inference on chip 2 of 16
+running inference on chip 3 of 16
+running inference on chip 4 of 16
+running inference on chip 5 of 16
+running inference on chip 6 of 16
+running inference on chip 7 of 16
+running inference on chip 8 of 16
+running inference on chip 9 of 16
+running inference on chip 10 of 16
+running inference on chip 11 of 16
+running inference on chip 12 of 16
+running inference on chip 13 of 16
+running inference on chip 14 of 16
+running inference on chip 15 of 16
+running inference on image dataset-medium/images/1476907971_CHADGRISMOPENPIPELINE-ortho.tif.
+loading input image (5351, 8695, 3)
+running inference on chip 0 of 40
+running inference on chip 1 of 40
+running inference on chip 2 of 40
+running inference on chip 3 of 40
+running inference on chip 4 of 40
+running inference on chip 5 of 40
+running inference on chip 6 of 40
+running inference on chip 7 of 40
+running inference on chip 8 of 40
+running inference on chip 9 of 40
+running inference on chip 10 of 40
+running inference on chip 11 of 40
+running inference on chip 12 of 40
+running inference on chip 13 of 40
+running inference on chip 14 of 40
+running inference on chip 15 of 40
+running inference on chip 16 of 40
+running inference on chip 17 of 40
+running inference on chip 18 of 40
+running inference on chip 19 of 40
+running inference on chip 20 of 40
+running inference on chip 21 of 40
+running inference on chip 22 of 40
+running inference on chip 23 of 40
+running inference on chip 24 of 40
+running inference on chip 25 of 40
+running inference on chip 26 of 40
+running inference on chip 27 of 40
+running inference on chip 28 of 40
+running inference on chip 29 of 40
+running inference on chip 30 of 40
+running inference on chip 31 of 40
+running inference on chip 32 of 40
+running inference on chip 33 of 40
+running inference on chip 34 of 40
+running inference on chip 35 of 40
+running inference on chip 36 of 40
+running inference on chip 37 of 40
+running inference on chip 38 of 40
+running inference on chip 39 of 40
+running inference on image dataset-medium/images/9170479165_625EDFBAB6OPENPIPELINE-ortho.tif.
+loading input image (3631, 3440, 3)
+running inference on chip 0 of 12
+running inference on chip 1 of 12
+running inference on chip 2 of 12
+running inference on chip 3 of 12
+running inference on chip 4 of 12
+running inference on chip 5 of 12
+running inference on chip 6 of 12
+running inference on chip 7 of 12
+running inference on chip 8 of 12
+running inference on chip 9 of 12
+running inference on chip 10 of 12
+running inference on chip 11 of 12
+running inference on image dataset-medium/images/551063e3c5_8FCB044F58INSPIRE-ortho.tif.
+loading input image (1529, 1147, 3)
+running inference on chip 0 of 2
+running inference on chip 1 of 2
+running inference on image dataset-medium/images/74d7796531_EB81FE6E2BOPENPIPELINE-ortho.tif.
+loading input image (21211, 5924, 3)
+running inference on chip 0 of 90
+running inference on chip 1 of 90
+running inference on chip 2 of 90
+running inference on chip 3 of 90
+running inference on chip 4 of 90
+running inference on chip 5 of 90
+running inference on chip 6 of 90
+running inference on chip 7 of 90
+running inference on chip 8 of 90
+running inference on chip 9 of 90
+running inference on chip 10 of 90
+running inference on chip 11 of 90
+running inference on chip 12 of 90
+running inference on chip 13 of 90
+running inference on chip 14 of 90
+running inference on chip 15 of 90
+running inference on chip 16 of 90
+running inference on chip 17 of 90
+running inference on chip 18 of 90
+running inference on chip 19 of 90
+running inference on chip 20 of 90
+running inference on chip 21 of 90
+running inference on chip 22 of 90
+running inference on chip 23 of 90
+running inference on chip 24 of 90
+running inference on chip 25 of 90
+running inference on chip 26 of 90
+running inference on chip 27 of 90
+running inference on chip 28 of 90
+running inference on chip 29 of 90
+running inference on chip 30 of 90
+running inference on chip 31 of 90
+running inference on chip 32 of 90
+running inference on chip 33 of 90
+running inference on chip 34 of 90
+running inference on chip 35 of 90
+running inference on chip 36 of 90
+running inference on chip 37 of 90
+running inference on chip 38 of 90
+running inference on chip 39 of 90
+running inference on chip 40 of 90
+running inference on chip 41 of 90
+running inference on chip 42 of 90
+running inference on chip 43 of 90
+running inference on chip 44 of 90
+running inference on chip 45 of 90
+running inference on chip 46 of 90
+running inference on chip 47 of 90
+running inference on chip 48 of 90
+running inference on chip 49 of 90
+running inference on chip 50 of 90
+running inference on chip 51 of 90
+running inference on chip 52 of 90
+running inference on chip 53 of 90
+running inference on chip 54 of 90
+running inference on chip 55 of 90
+running inference on chip 56 of 90
+running inference on chip 57 of 90
+running inference on chip 58 of 90
+running inference on chip 59 of 90
+running inference on chip 60 of 90
+running inference on chip 61 of 90
+running inference on chip 62 of 90
+running inference on chip 63 of 90
+running inference on chip 64 of 90
+running inference on chip 65 of 90
+running inference on chip 66 of 90
+running inference on chip 67 of 90
+running inference on chip 68 of 90
+running inference on chip 69 of 90
+running inference on chip 70 of 90
+running inference on chip 71 of 90
+running inference on chip 72 of 90
+running inference on chip 73 of 90
+running inference on chip 74 of 90
+running inference on chip 75 of 90
+running inference on chip 76 of 90
+running inference on chip 77 of 90
+running inference on chip 78 of 90
+running inference on chip 79 of 90
+running inference on chip 80 of 90
+running inference on chip 81 of 90
+running inference on chip 82 of 90
+running inference on chip 83 of 90
+running inference on chip 84 of 90
+running inference on chip 85 of 90
+running inference on chip 86 of 90
+running inference on chip 87 of 90
+running inference on chip 88 of 90
+running inference on chip 89 of 90
+running inference on image dataset-medium/images/12fa5e614f_53197F206FOPENPIPELINE-ortho.tif.
+loading input image (5637, 5829, 3)
+running inference on chip 0 of 25
+running inference on chip 1 of 25
+running inference on chip 2 of 25
+running inference on chip 3 of 25
+running inference on chip 4 of 25
+running inference on chip 5 of 25
+running inference on chip 6 of 25
+running inference on chip 7 of 25
+running inference on chip 8 of 25
+running inference on chip 9 of 25
+running inference on chip 10 of 25
+running inference on chip 11 of 25
+running inference on chip 12 of 25
+running inference on chip 13 of 25
+running inference on chip 14 of 25
+running inference on chip 15 of 25
+running inference on chip 16 of 25
+running inference on chip 17 of 25
+running inference on chip 18 of 25
+running inference on chip 19 of 25
+running inference on chip 20 of 25
+running inference on chip 21 of 25
+running inference on chip 22 of 25
+running inference on chip 23 of 25
+running inference on chip 24 of 25
+running inference on image dataset-medium/images/c2e8370ca3_3340CAC7AEOPENPIPELINE-ortho.tif.
+loading input image (2102, 3344, 3)
+running inference on chip 0 of 6
+running inference on chip 1 of 6
+running inference on chip 2 of 6
+running inference on chip 3 of 6
+running inference on chip 4 of 6
+running inference on chip 5 of 6
+running inference on image dataset-medium/images/6f93b9026b_F1BFB8B17DOPENPIPELINE-ortho.tif.
+loading input image (4682, 3918, 3)
+running inference on chip 0 of 16
+running inference on chip 1 of 16
+running inference on chip 2 of 16
+running inference on chip 3 of 16
+running inference on chip 4 of 16
+running inference on chip 5 of 16
+running inference on chip 6 of 16
+running inference on chip 7 of 16
+running inference on chip 8 of 16
+running inference on chip 9 of 16
+running inference on chip 10 of 16
+running inference on chip 11 of 16
+running inference on chip 12 of 16
+running inference on chip 13 of 16
+running inference on chip 14 of 16
+running inference on chip 15 of 16
+running inference on image dataset-medium/images/8710b98ea0_06E6522D6DINSPIRE-ortho.tif.
+loading input image (8217, 8408, 3)
+running inference on chip 0 of 56
+running inference on chip 1 of 56
+running inference on chip 2 of 56
+running inference on chip 3 of 56
+running inference on chip 4 of 56
+running inference on chip 5 of 56
+running inference on chip 6 of 56
+running inference on chip 7 of 56
+running inference on chip 8 of 56
+running inference on chip 9 of 56
+running inference on chip 10 of 56
+running inference on chip 11 of 56
+running inference on chip 12 of 56
+running inference on chip 13 of 56
+running inference on chip 14 of 56
+running inference on chip 15 of 56
+running inference on chip 16 of 56
+running inference on chip 17 of 56
+running inference on chip 18 of 56
+running inference on chip 19 of 56
+running inference on chip 20 of 56
+running inference on chip 21 of 56
+running inference on chip 22 of 56
+running inference on chip 23 of 56
+running inference on chip 24 of 56
+running inference on chip 25 of 56
+running inference on chip 26 of 56
+running inference on chip 27 of 56
+running inference on chip 28 of 56
+running inference on chip 29 of 56
+running inference on chip 30 of 56
+running inference on chip 31 of 56
+running inference on chip 32 of 56
+running inference on chip 33 of 56
+running inference on chip 34 of 56
+running inference on chip 35 of 56
+running inference on chip 36 of 56
+running inference on chip 37 of 56
+running inference on chip 38 of 56
+running inference on chip 39 of 56
+running inference on chip 40 of 56
+running inference on chip 41 of 56
+running inference on chip 42 of 56
+running inference on chip 43 of 56
+running inference on chip 44 of 56
+running inference on chip 45 of 56
+running inference on chip 46 of 56
+running inference on chip 47 of 56
+running inference on chip 48 of 56
+running inference on chip 49 of 56
+running inference on chip 50 of 56
+running inference on chip 51 of 56
+running inference on chip 52 of 56
+running inference on chip 53 of 56
+running inference on chip 54 of 56
+running inference on chip 55 of 56
+running inference on image dataset-medium/images/25f1c24f30_EB81FE6E2BOPENPIPELINE-ortho.tif.
+loading input image (11561, 6115, 3)
+running inference on chip 0 of 60
+running inference on chip 1 of 60
+running inference on chip 2 of 60
+running inference on chip 3 of 60
+running inference on chip 4 of 60
+running inference on chip 5 of 60
+running inference on chip 6 of 60
+running inference on chip 7 of 60
+running inference on chip 8 of 60
+running inference on chip 9 of 60
+running inference on chip 10 of 60
+running inference on chip 11 of 60
+running inference on chip 12 of 60
+running inference on chip 13 of 60
+running inference on chip 14 of 60
+running inference on chip 15 of 60
+running inference on chip 16 of 60
+running inference on chip 17 of 60
+running inference on chip 18 of 60
+running inference on chip 19 of 60
+running inference on chip 20 of 60
+running inference on chip 21 of 60
+running inference on chip 22 of 60
+running inference on chip 23 of 60
+running inference on chip 24 of 60
+running inference on chip 25 of 60
+running inference on chip 26 of 60
+running inference on chip 27 of 60
+running inference on chip 28 of 60
+running inference on chip 29 of 60
+running inference on chip 30 of 60
+running inference on chip 31 of 60
+running inference on chip 32 of 60
+running inference on chip 33 of 60
+running inference on chip 34 of 60
+running inference on chip 35 of 60
+running inference on chip 36 of 60
+running inference on chip 37 of 60
+running inference on chip 38 of 60
+running inference on chip 39 of 60
+running inference on chip 40 of 60
+running inference on chip 41 of 60
+running inference on chip 42 of 60
+running inference on chip 43 of 60
+running inference on chip 44 of 60
+running inference on chip 45 of 60
+running inference on chip 46 of 60
+running inference on chip 47 of 60
+running inference on chip 48 of 60
+running inference on chip 49 of 60
+running inference on chip 50 of 60
+running inference on chip 51 of 60
+running inference on chip 52 of 60
+running inference on chip 53 of 60
+running inference on chip 54 of 60
+running inference on chip 55 of 60
+running inference on chip 56 of 60
+running inference on chip 57 of 60
+running inference on chip 58 of 60
+running inference on chip 59 of 60
+running inference on image dataset-medium/images/39e77bedd0_729FB913CDOPENPIPELINE-ortho.tif.
+loading input image (6497, 6306, 3)
+running inference on chip 0 of 36
+running inference on chip 1 of 36
+running inference on chip 2 of 36
+running inference on chip 3 of 36
+running inference on chip 4 of 36
+running inference on chip 5 of 36
+running inference on chip 6 of 36
+running inference on chip 7 of 36
+running inference on chip 8 of 36
+running inference on chip 9 of 36
+running inference on chip 10 of 36
+running inference on chip 11 of 36
+running inference on chip 12 of 36
+running inference on chip 13 of 36
+running inference on chip 14 of 36
+running inference on chip 15 of 36
+running inference on chip 16 of 36
+running inference on chip 17 of 36
+running inference on chip 18 of 36
+running inference on chip 19 of 36
+running inference on chip 20 of 36
+running inference on chip 21 of 36
+running inference on chip 22 of 36
+running inference on chip 23 of 36
+running inference on chip 24 of 36
+running inference on chip 25 of 36
+running inference on chip 26 of 36
+running inference on chip 27 of 36
+running inference on chip 28 of 36
+running inference on chip 29 of 36
+running inference on chip 30 of 36
+running inference on chip 31 of 36
+running inference on chip 32 of 36
+running inference on chip 33 of 36
+running inference on chip 34 of 36
+running inference on chip 35 of 36
+running inference on image dataset-medium/images/e87da4ebdb_29FEA32BC7INSPIRE-ortho.tif.
+loading input image (13185, 12230, 3)
+running inference on chip 0 of 121
+running inference on chip 1 of 121
+running inference on chip 2 of 121
+running inference on chip 3 of 121
+running inference on chip 4 of 121
+running inference on chip 5 of 121
+running inference on chip 6 of 121
+running inference on chip 7 of 121
+running inference on chip 8 of 121
+running inference on chip 9 of 121
+running inference on chip 10 of 121
+running inference on chip 11 of 121
+running inference on chip 12 of 121
+running inference on chip 13 of 121
+running inference on chip 14 of 121
+running inference on chip 15 of 121
+running inference on chip 16 of 121
+running inference on chip 17 of 121
+running inference on chip 18 of 121
+running inference on chip 19 of 121
+running inference on chip 20 of 121
+running inference on chip 21 of 121
+running inference on chip 22 of 121
+running inference on chip 23 of 121
+running inference on chip 24 of 121
+running inference on chip 25 of 121
+running inference on chip 26 of 121
+running inference on chip 27 of 121
+running inference on chip 28 of 121
+running inference on chip 29 of 121
+running inference on chip 30 of 121
+running inference on chip 31 of 121
+running inference on chip 32 of 121
+running inference on chip 33 of 121
+running inference on chip 34 of 121
+running inference on chip 35 of 121
+running inference on chip 36 of 121
+running inference on chip 37 of 121
+running inference on chip 38 of 121
+running inference on chip 39 of 121
+running inference on chip 40 of 121
+running inference on chip 41 of 121
+running inference on chip 42 of 121
+running inference on chip 43 of 121
+running inference on chip 44 of 121
+running inference on chip 45 of 121
+running inference on chip 46 of 121
+running inference on chip 47 of 121
+running inference on chip 48 of 121
+running inference on chip 49 of 121
+running inference on chip 50 of 121
+running inference on chip 51 of 121
+running inference on chip 52 of 121
+running inference on chip 53 of 121
+running inference on chip 54 of 121
+running inference on chip 55 of 121
+running inference on chip 56 of 121
+running inference on chip 57 of 121
+running inference on chip 58 of 121
+running inference on chip 59 of 121
+running inference on chip 60 of 121
+running inference on chip 61 of 121
+running inference on chip 62 of 121
+running inference on chip 63 of 121
+running inference on chip 64 of 121
+running inference on chip 65 of 121
+running inference on chip 66 of 121
+running inference on chip 67 of 121
+running inference on chip 68 of 121
+running inference on chip 69 of 121
+running inference on chip 70 of 121
+running inference on chip 71 of 121
+running inference on chip 72 of 121
+running inference on chip 73 of 121
+running inference on chip 74 of 121
+running inference on chip 75 of 121
+running inference on chip 76 of 121
+running inference on chip 77 of 121
+running inference on chip 78 of 121
+running inference on chip 79 of 121
+running inference on chip 80 of 121
+running inference on chip 81 of 121
+running inference on chip 82 of 121
+running inference on chip 83 of 121
+running inference on chip 84 of 121
+running inference on chip 85 of 121
+running inference on chip 86 of 121
+running inference on chip 87 of 121
+running inference on chip 88 of 121
+running inference on chip 89 of 121
+running inference on chip 90 of 121
+running inference on chip 91 of 121
+running inference on chip 92 of 121
+running inference on chip 93 of 121
+running inference on chip 94 of 121
+running inference on chip 95 of 121
+running inference on chip 96 of 121
+running inference on chip 97 of 121
+running inference on chip 98 of 121
+running inference on chip 99 of 121
+running inference on chip 100 of 121
+running inference on chip 101 of 121
+running inference on chip 102 of 121
+running inference on chip 103 of 121
+running inference on chip 104 of 121
+running inference on chip 105 of 121
+running inference on chip 106 of 121
+running inference on chip 107 of 121
+running inference on chip 108 of 121
+running inference on chip 109 of 121
+running inference on chip 110 of 121
+running inference on chip 111 of 121
+running inference on chip 112 of 121
+running inference on chip 113 of 121
+running inference on chip 114 of 121
+running inference on chip 115 of 121
+running inference on chip 116 of 121
+running inference on chip 117 of 121
+running inference on chip 118 of 121
+running inference on chip 119 of 121
+running inference on chip 120 of 121
+running inference on image dataset-medium/images/420d6b69b8_84B52814D2OPENPIPELINE-ortho.tif.
+loading input image (9364, 9555, 3)
+running inference on chip 0 of 64
+running inference on chip 1 of 64
+running inference on chip 2 of 64
+running inference on chip 3 of 64
+running inference on chip 4 of 64
+running inference on chip 5 of 64
+running inference on chip 6 of 64
+running inference on chip 7 of 64
+running inference on chip 8 of 64
+running inference on chip 9 of 64
+running inference on chip 10 of 64
+running inference on chip 11 of 64
+running inference on chip 12 of 64
+running inference on chip 13 of 64
+running inference on chip 14 of 64
+running inference on chip 15 of 64
+running inference on chip 16 of 64
+running inference on chip 17 of 64
+running inference on chip 18 of 64
+running inference on chip 19 of 64
+running inference on chip 20 of 64
+running inference on chip 21 of 64
+running inference on chip 22 of 64
+running inference on chip 23 of 64
+running inference on chip 24 of 64
+running inference on chip 25 of 64
+running inference on chip 26 of 64
+running inference on chip 27 of 64
+running inference on chip 28 of 64
+running inference on chip 29 of 64
+running inference on chip 30 of 64
+running inference on chip 31 of 64
+running inference on chip 32 of 64
+running inference on chip 33 of 64
+running inference on chip 34 of 64
+running inference on chip 35 of 64
+running inference on chip 36 of 64
+running inference on chip 37 of 64
+running inference on chip 38 of 64
+running inference on chip 39 of 64
+running inference on chip 40 of 64
+running inference on chip 41 of 64
+running inference on chip 42 of 64
+running inference on chip 43 of 64
+running inference on chip 44 of 64
+running inference on chip 45 of 64
+running inference on chip 46 of 64
+running inference on chip 47 of 64
+running inference on chip 48 of 64
+running inference on chip 49 of 64
+running inference on chip 50 of 64
+running inference on chip 51 of 64
+running inference on chip 52 of 64
+running inference on chip 53 of 64
+running inference on chip 54 of 64
+running inference on chip 55 of 64
+running inference on chip 56 of 64
+running inference on chip 57 of 64
+running inference on chip 58 of 64
+running inference on chip 59 of 64
+running inference on chip 60 of 64
+running inference on chip 61 of 64
+running inference on chip 62 of 64
+running inference on chip 63 of 64
+running inference on image dataset-medium/images/d06b2c67d2_2A62B67B52OPENPIPELINE-ortho.tif.
+loading input image (6879, 5351, 3)
+running inference on chip 0 of 30
+running inference on chip 1 of 30
+running inference on chip 2 of 30
+running inference on chip 3 of 30
+running inference on chip 4 of 30
+running inference on chip 5 of 30
+running inference on chip 6 of 30
+running inference on chip 7 of 30
+running inference on chip 8 of 30
+running inference on chip 9 of 30
+running inference on chip 10 of 30
+running inference on chip 11 of 30
+running inference on chip 12 of 30
+running inference on chip 13 of 30
+running inference on chip 14 of 30
+running inference on chip 15 of 30
+running inference on chip 16 of 30
+running inference on chip 17 of 30
+running inference on chip 18 of 30
+running inference on chip 19 of 30
+running inference on chip 20 of 30
+running inference on chip 21 of 30
+running inference on chip 22 of 30
+running inference on chip 23 of 30
+running inference on chip 24 of 30
+running inference on chip 25 of 30
+running inference on chip 26 of 30
+running inference on chip 27 of 30
+running inference on chip 28 of 30
+running inference on chip 29 of 30
+running inference on image dataset-medium/images/107f24d6e9_F1BE1D4184INSPIRE-ortho.tif.
+loading input image (12326, 11084, 3)
+running inference on chip 0 of 110
+running inference on chip 1 of 110
+running inference on chip 2 of 110
+running inference on chip 3 of 110
+running inference on chip 4 of 110
+running inference on chip 5 of 110
+running inference on chip 6 of 110
+running inference on chip 7 of 110
+running inference on chip 8 of 110
+running inference on chip 9 of 110
+running inference on chip 10 of 110
+running inference on chip 11 of 110
+running inference on chip 12 of 110
+running inference on chip 13 of 110
+running inference on chip 14 of 110
+running inference on chip 15 of 110
+running inference on chip 16 of 110
+running inference on chip 17 of 110
+running inference on chip 18 of 110
+running inference on chip 19 of 110
+running inference on chip 20 of 110
+running inference on chip 21 of 110
+running inference on chip 22 of 110
+running inference on chip 23 of 110
+running inference on chip 24 of 110
+running inference on chip 25 of 110
+running inference on chip 26 of 110
+running inference on chip 27 of 110
+running inference on chip 28 of 110
+running inference on chip 29 of 110
+running inference on chip 30 of 110
+running inference on chip 31 of 110
+running inference on chip 32 of 110
+running inference on chip 33 of 110
+running inference on chip 34 of 110
+running inference on chip 35 of 110
+running inference on chip 36 of 110
+running inference on chip 37 of 110
+running inference on chip 38 of 110
+running inference on chip 39 of 110
+running inference on chip 40 of 110
+running inference on chip 41 of 110
+running inference on chip 42 of 110
+running inference on chip 43 of 110
+running inference on chip 44 of 110
+running inference on chip 45 of 110
+running inference on chip 46 of 110
+running inference on chip 47 of 110
+running inference on chip 48 of 110
+running inference on chip 49 of 110
+running inference on chip 50 of 110
+running inference on chip 51 of 110
+running inference on chip 52 of 110
+running inference on chip 53 of 110
+running inference on chip 54 of 110
+running inference on chip 55 of 110
+running inference on chip 56 of 110
+running inference on chip 57 of 110
+running inference on chip 58 of 110
+running inference on chip 59 of 110
+running inference on chip 60 of 110
+running inference on chip 61 of 110
+running inference on chip 62 of 110
+running inference on chip 63 of 110
+running inference on chip 64 of 110
+running inference on chip 65 of 110
+running inference on chip 66 of 110
+running inference on chip 67 of 110
+running inference on chip 68 of 110
+running inference on chip 69 of 110
+running inference on chip 70 of 110
+running inference on chip 71 of 110
+running inference on chip 72 of 110
+running inference on chip 73 of 110
+running inference on chip 74 of 110
+running inference on chip 75 of 110
+running inference on chip 76 of 110
+running inference on chip 77 of 110
+running inference on chip 78 of 110
+running inference on chip 79 of 110
+running inference on chip 80 of 110
+running inference on chip 81 of 110
+running inference on chip 82 of 110
+running inference on chip 83 of 110
+running inference on chip 84 of 110
+running inference on chip 85 of 110
+running inference on chip 86 of 110
+running inference on chip 87 of 110
+running inference on chip 88 of 110
+running inference on chip 89 of 110
+running inference on chip 90 of 110
+running inference on chip 91 of 110
+running inference on chip 92 of 110
+running inference on chip 93 of 110
+running inference on chip 94 of 110
+running inference on chip 95 of 110
+running inference on chip 96 of 110
+running inference on chip 97 of 110
+running inference on chip 98 of 110
+running inference on chip 99 of 110
+running inference on chip 100 of 110
+running inference on chip 101 of 110
+running inference on chip 102 of 110
+running inference on chip 103 of 110
+running inference on chip 104 of 110
+running inference on chip 105 of 110
+running inference on chip 106 of 110
+running inference on chip 107 of 110
+running inference on chip 108 of 110
+running inference on chip 109 of 110
+running inference on image dataset-medium/images/1726eb08ef_60693DB04DINSPIRE-ortho.tif.
+loading input image (3440, 2867, 3)
+running inference on chip 0 of 9
+running inference on chip 1 of 9
+running inference on chip 2 of 9
+running inference on chip 3 of 9
+running inference on chip 4 of 9
+running inference on chip 5 of 9
+running inference on chip 6 of 9
+running inference on chip 7 of 9
+running inference on chip 8 of 9
+running inference on image dataset-medium/images/dabec5e872_E8AD935CEDINSPIRE-ortho.tif.
+loading input image (9746, 9364, 3)
+running inference on chip 0 of 72
+running inference on chip 1 of 72
+running inference on chip 2 of 72
+running inference on chip 3 of 72
+running inference on chip 4 of 72
+running inference on chip 5 of 72
+running inference on chip 6 of 72
+running inference on chip 7 of 72
+running inference on chip 8 of 72
+running inference on chip 9 of 72
+running inference on chip 10 of 72
+running inference on chip 11 of 72
+running inference on chip 12 of 72
+running inference on chip 13 of 72
+running inference on chip 14 of 72
+running inference on chip 15 of 72
+running inference on chip 16 of 72
+running inference on chip 17 of 72
+running inference on chip 18 of 72
+running inference on chip 19 of 72
+running inference on chip 20 of 72
+running inference on chip 21 of 72
+running inference on chip 22 of 72
+running inference on chip 23 of 72
+running inference on chip 24 of 72
+running inference on chip 25 of 72
+running inference on chip 26 of 72
+running inference on chip 27 of 72
+running inference on chip 28 of 72
+running inference on chip 29 of 72
+running inference on chip 30 of 72
+running inference on chip 31 of 72
+running inference on chip 32 of 72
+running inference on chip 33 of 72
+running inference on chip 34 of 72
+running inference on chip 35 of 72
+running inference on chip 36 of 72
+running inference on chip 37 of 72
+running inference on chip 38 of 72
+running inference on chip 39 of 72
+running inference on chip 40 of 72
+running inference on chip 41 of 72
+running inference on chip 42 of 72
+running inference on chip 43 of 72
+running inference on chip 44 of 72
+running inference on chip 45 of 72
+running inference on chip 46 of 72
+running inference on chip 47 of 72
+running inference on chip 48 of 72
+running inference on chip 49 of 72
+running inference on chip 50 of 72
+running inference on chip 51 of 72
+running inference on chip 52 of 72
+running inference on chip 53 of 72
+running inference on chip 54 of 72
+running inference on chip 55 of 72
+running inference on chip 56 of 72
+running inference on chip 57 of 72
+running inference on chip 58 of 72
+running inference on chip 59 of 72
+running inference on chip 60 of 72
+running inference on chip 61 of 72
+running inference on chip 62 of 72
+running inference on chip 63 of 72
+running inference on chip 64 of 72
+running inference on chip 65 of 72
+running inference on chip 66 of 72
+running inference on chip 67 of 72
+running inference on chip 68 of 72
+running inference on chip 69 of 72
+running inference on chip 70 of 72
+running inference on chip 71 of 72
+precision=0.9101147498783916 recall=0.8540999230828314 f1=0.8476658581504987 miou=0.24114971158546003 iou per class=[0.113076 0.017705 0.023667 0.18425  0.879737 0.228464]
+Length of iou array is: 6
+/home/TUE/20176671/miniconda3/envs/fastai/lib/python3.7/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+precision=0.9303370160090605 recall=0.8581866839049628 f1=0.8846482102001213 miou=0.2598244957524672 iou per class=[0.       0.17786  0.178756 0.       0.859988 0.342342]
+/mnt/server-home/TUE/20176671/dd-ml-segmentation-benchmark/libs/scoring.py:50: RuntimeWarning: invalid value encountered in true_divide
+  cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+Length of iou array is: 6
+precision=0.5875696017823784 recall=0.605782712328502 f1=0.547092259806535 miou=0.3097093922857672 iou per class=[0.107873 0.066373 0.567327 0.       0.55769  0.558994]
+Length of iou array is: 6
+precision=0.7893972091457234 recall=0.6302214861660685 f1=0.6682415061514412 miou=0.3395747230658799 iou per class=[0.63053  0.183338 0.261254 0.096081 0.567137 0.299107]
+Length of iou array is: 6
+precision=0.7436104630262408 recall=0.646606732512534 f1=0.6736651383097392 miou=0.2730233764113463 iou per class=[0.320697 0.033368 0.518564 0.       0.603871 0.16164 ]
+Length of iou array is: 6
+precision=0.7571040165657212 recall=0.43438959947725336 f1=0.5387139665356367 miou=0.13105107131039181 iou per class=[0.000866 0.016978 0.224435 0.       0.510719 0.033309]
+Length of iou array is: 6
+precision=0.9184435935140235 recall=0.8897975228165078 f1=0.9013668362597604 miou=0.2999456002213386 iou per class=[0.       0.071312 0.508652 0.332968 0.886742 0.      ]
+Length of iou array is: 6
+precision=0.8799135559438571 recall=0.8654552356166562 f1=0.8663784111639531 miou=0.4628005284743748 iou per class=[0.492232 0.177237 0.829003 0.119901 0.759763 0.398667]
+Length of iou array is: 6
+precision=0.8820970305119415 recall=0.8656943097092814 f1=0.8306055714589753 miou=0.22234818031927386 iou per class=[0.       0.048616 0.132609 0.       0.865877 0.286987]
+Length of iou array is: 6
+precision=0.7951312221590424 recall=0.7593085296799261 f1=0.7598398795282095 miou=0.34685230126087685 iou per class=[0.67664  0.026703 0.365565 0.076737 0.729207 0.206262]
+Length of iou array is: 6
+precision=0.7033130872410905 recall=0.6056015556556356 f1=0.6310794034859994 miou=0.31856852696574955 iou per class=[0.486774 0.091343 0.468651 0.       0.494743 0.369899]
+Length of iou array is: 6
+precision=0.9074934618751712 recall=0.8936025944068253 f1=0.8940365097734584 miou=0.42037626033862835 iou per class=[0.571584 0.07693  0.362038 0.053324 0.888828 0.569553]
+Length of iou array is: 6
+{'mean_iou': 0.3021020139992962, 'miou_class': array([0.283356, 0.082314, 0.370044, 0.071938, 0.717025, 0.287935]), 'f1_mean': 0.7536111292353608, 'f1_std': 0.1303123293623032, 'pr_mean': 0.8170437506377203, 'pr_std': 0.101639868046628, 're_mean': 0.7423955737797487, 're_std': 0.14580538764401776}
+wandb: Waiting for W&B process to finish, PID 46472
+wandb: Program ended successfully.
+wandb: - 663.41MB of 663.51MB uploaded (0.00MB deduped)wandb: \ 725.91MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 808.13MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 890.07MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 974.49MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 1056.24MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 1135.32MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 1216.95MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 1297.94MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 1380.15MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 1462.51MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 1544.44MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 1627.49MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 1708.42MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 1790.78MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 1872.41MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 1954.34MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 2034.46MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 2118.27MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 2184.54MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 2268.59MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 2359.51MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 2448.36MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 2534.65MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 2618.41MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 2700.29MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 2782.30MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 2862.21MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 2944.57MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 3024.29MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 3104.06MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 3192.43MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 3274.24MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 3356.54MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 3420.27MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 3502.56MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 3583.77MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 3664.06MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 3746.30MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 3826.53MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 3910.41MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 3992.22MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 4072.27MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 4138.54MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 4220.48MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 4302.29MB of 4535.75MB uploaded (0.00MB deduped)wandb: | 4381.52MB of 4535.75MB uploaded (0.00MB deduped)wandb: / 4468.46MB of 4535.75MB uploaded (0.00MB deduped)wandb: - 4535.75MB of 4535.75MB uploaded (0.00MB deduped)wandb: \ 4535.75MB of 4535.75MB uploaded (0.00MB deduped)wandb:                                                                                
+wandb: Find user logs for this run at: wandb/run-20201027_005242-3vt5e427/logs/debug.log
+wandb: Find internal logs for this run at: wandb/run-20201027_005242-3vt5e427/logs/debug-internal.log
+wandb: Run summary:
+wandb:                epoch 39
+wandb:           train_loss 0.17139
+wandb:           valid_loss 4.19492
+wandb:            precision 0.82745
+wandb:               recall 0.83748
+wandb:               f_beta 0.82559
+wandb:                _step 40
+wandb:             _runtime 79691
+wandb:           _timestamp 1603836054
+wandb:             mean_iou 0.3021
+wandb:              f1_mean 0.75361
+wandb:               f1_std 0.13031
+wandb:              pr_mean 0.81704
+wandb:               pr_std 0.10164
+wandb:              re_mean 0.7424
+wandb:               re_std 0.14581
+wandb: Run history:
+wandb:        epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:   train_loss █▇▆▇▅▅▅▅▄▅▄▆▅▄▅▄▃▄▃▃▄▄▂▂▂▂▂▃▂▂▂▁▁▂▂▁▁▁▂▁
+wandb:   valid_loss ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▂▁▁▂▃▂▂█▂▂
+wandb:    precision ▁▆▃▆▄█▄▆▆▆▃▄▇▁▄▃▃▂▅▅▅▅▆▆▆▇▇█▅▇▆▆▆▆▆▇█▆██
+wandb:       recall ▃▆▂▅▄█▃▆▆▅▄▄▆▁▅▄▃▂▄▆▆▆▆▆▆▇▇▇▆█▇▇▆▇▇▇█▇██
+wandb:       f_beta ▄▇▄▄▄█▂▇▆▄▄▆▆▃▅▅▃▁▆▆▆▅▇▆▇▇██▆█▇▇▇▇▇▇█▇██
+wandb:        _step ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇██
+wandb:     _runtime ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇█
+wandb:   _timestamp ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇█
+wandb:     mean_iou ▁
+wandb:      f1_mean ▁
+wandb:       f1_std ▁
+wandb:      pr_mean ▁
+wandb:       pr_std ▁
+wandb:      re_mean ▁
+wandb:       re_std ▁
+wandb: 
+wandb: Synced 5 W&B file(s), 4321 media file(s), 0 artifact file(s) and 13 other file(s)
+wandb: 
+wandb: Synced upbeat-dew-80: https://wandb.ai/mrheffels/dd-ml-segmentation-benchmark/runs/3vt5e427
+

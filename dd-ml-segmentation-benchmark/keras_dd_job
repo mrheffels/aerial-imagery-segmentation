@@ -1,0 +1,5 @@
+#!/bin/bash
+source /home/TUE/20176671/miniconda3/etc/profile.d/conda.sh
+conda activate droneDeploy
+python main_keras.py
+conda deactivate
