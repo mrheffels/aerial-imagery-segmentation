@@ -38,7 +38,7 @@ This is for use with the models/research/deeplab Tensorflow implementation
 - convert\_rgb\_to\_index.py (altered to strip 3 dimensional segmentation labels to 1 dimensional)
 - build\_dd\_data.py (altered for DroneDeploy compatiblity)
 - data\_generator.py (altered for DroneDeploy compatiblity)
-- train-dd-full.sh, eval-dd.sh, vis-dd.sh (dataset adaptations inspired by this GitHub repo\footnote[2]{https://github.com/heaversm/deeplab-training})
+- train-dd-full.sh, eval-dd.sh, vis-dd.sh (dataset adaptations inspired by this GitHub repo (https://github.com/heaversm/deeplab-training)
 
 ### DroneDeploy benchmark codebase https://github.com/dronedeploy/dd-ml-segmentation-benchmark extensions
 - custom\_training.py (implementation Focal loss function for fastai u-net)
